@@ -7,11 +7,11 @@ body { margin: 0px; }
 }
 .synapse-header {
     background-color: #282828;
+    border-bottom: #181818 solid 2px;
 }
 .synapse-content {
     background-color: #1F1F1F;
     overflow-y: scroll;
-    padding: 0px;
 }
 /* width */
 .synapse-content::-webkit-scrollbar {
@@ -20,12 +20,12 @@ body { margin: 0px; }
   
   /* Track */
   .synapse-content::-webkit-scrollbar-track {
-    background: #282828;
+    background: #444444;
   }
   
   /* Handle */
   .synapse-content::-webkit-scrollbar-thumb {
-    background: #1f1f1f;
+    background: #1b1b1b;
   }
   
   /* Handle on hover */
@@ -34,4 +34,30 @@ body { margin: 0px; }
   }
 .synapse-footer {
     background-color: #282828;
+    border-top: #181818 solid 2px;
+}
+.synapse-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 5px;
+  padding: 5px;
+  grid-auto-rows: 1fr;
+  background-color: #282828;
+  margin: 10px;
+}
+.synapse-column {
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Roboto';
+  padding: 5px;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .synapse-row {
+    grid-template-columns: 1fr;
+  }
 }

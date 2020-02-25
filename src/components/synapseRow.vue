@@ -1,13 +1,14 @@
 <template>
   <div
-  class="synapse-footer"
+  class="synapse-row"
   >
+  <slot/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'synapseFooter',
+  name: 'synapseRow',
   data () {
     return {}
   }
