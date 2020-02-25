@@ -1,6 +1,6 @@
 # synapse-vue-library
 
-> A Vue.js project
+> https://emilo9.github.io/Synapse-Vue-Library/
 
 ## Build Setup
 
