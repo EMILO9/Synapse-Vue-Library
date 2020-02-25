@@ -1,0 +1,37 @@
+body { margin: 0px; }
+.synapse-app {
+    background-color: #1F1F1F;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+}
+.synapse-header {
+    background-color: #282828;
+}
+.synapse-content {
+    background-color: #1F1F1F;
+    overflow-y: scroll;
+    padding: 0px;
+}
+/* width */
+.synapse-content::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .synapse-content::-webkit-scrollbar-track {
+    background: #282828;
+  }
+  
+  /* Handle */
+  .synapse-content::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+  }
+  
+  /* Handle on hover */
+  .synapse-content::-webkit-scrollbar-thumb:hover {
+    background: #181818;
+  }
+.synapse-footer {
+    background-color: #282828;
+}
