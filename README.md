@@ -9,3 +9,12 @@ Vue.use(Synapse)
 ```
 ***
 > Application
+***
+> Application
+***
+> Application
+***
+> Application
+***
+> Application
+***
