@@ -3,7 +3,7 @@
 > DEMO: https://emilo9.github.io/Synapse-Vue-Library/
 
 ## Build Setup
-[![version](https://img.shields.io/badge/version-1.0.0-yellow.svg)](https://semver.org)
+[![version](https://img.shields.io/badge/version-1.1.0-yellow.svg)](https://semver.org)
 ``` bash
 # install dependencies
 npm install
