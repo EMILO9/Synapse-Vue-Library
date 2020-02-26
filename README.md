@@ -14,6 +14,7 @@ Vue.use(Synapse)
 ```
 ***
 > Usage
+
 Markdown | Less | Pretty
 --- | --- | ---
 *Still* | `renders` | **nicely**
