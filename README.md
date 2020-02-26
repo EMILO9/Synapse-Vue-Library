@@ -1,21 +1,9 @@
 # synapse-vue-library
 
 > DEMO: https://emilo9.github.io/Synapse-Vue-Library/
-
-## Build Setup
 [![version](https://img.shields.io/badge/version-1.1.0-yellow.svg)](https://semver.org)
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+## How to use
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
