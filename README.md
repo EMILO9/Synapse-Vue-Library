@@ -8,6 +8,7 @@
 ***
 > Include the library in your project
 ```javascript
+npm i synapse-vue-library
 import Synapse from 'synapse-vue-library'
 Vue.use(Synapse)
 ```
