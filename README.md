@@ -16,3 +16,11 @@ Vue.use(Synapse)
 | border          | black solid 2px |
 | backgroundColor | white           |
 ***
+> Header
+
+|Property       |Default            |
+| ----------------|:---------------:|
+| padding:        | 10px            |
+| border          | black solid 2px |
+| backgroundColor | white           |
+***
