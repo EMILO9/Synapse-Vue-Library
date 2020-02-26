@@ -8,19 +8,3 @@ import Synapse from 'synapse-vue-library'
 Vue.use(Synapse)
 ```
 ***
-> Application
-
-|Property       |Default            |
-| ----------------|:---------------:|
-| padding:        | 10px            |
-| border          | black solid 2px |
-| backgroundColor | white           |
-***
-> Header
-
-|Property       |Default            |
-| ----------------|:---------------:|
-| padding:        | 10px            |
-| border          | black solid 2px |
-| backgroundColor | white           |
-***
