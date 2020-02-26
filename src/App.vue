@@ -1,9 +1,21 @@
 <template>
   <synapseApp>
-    <synapseHeader/>
+    <synapseHeader>
+      <synapseMenu>
+        <!-- <synapseBrand/>  -->
+        <synapseButton v-for="n in 3" :key="n">BUTTON{{n}}</synapseButton>
+      </synapseMenu>
+      <synapseMenu>
+        <synapseButton><i class="fas fa-bell"></i></synapseButton>
+        <synapseButton><i class="fab fa-battle-net"></i></synapseButton>
+        <synapseButton><i class="fab fa-chrome"></i></synapseButton>
+        <synapseButton v-for="n in 3" :key="n">BUTTON{{n}}</synapseButton>
+        <synapseSearch/>
+      </synapseMenu>
+    </synapseHeader>
     <synapseContent>
       <synapseRow>
-        <synapseColumn v-for="n in 3"></synapseColumn>
+        <synapseColumn v-for="n in 3" :key="n"></synapseColumn>
       </synapseRow>
       <synapseRow>
         <synapseColumn>Lorem ipsum dolor sit amet.</synapseColumn>
@@ -11,31 +23,35 @@
         <synapseColumn>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, neque.</synapseColumn>
       </synapseRow>
       <synapseRow>
-        <synapseColumn v-for="n in 3">Lorem ipsum dolor sit amet.</synapseColumn>
+        <synapseColumn v-for="n in 3" :key="n">Lorem ipsum dolor sit amet.</synapseColumn>
       </synapseRow>
       <synapseRow>
-        <synapseColumn v-for="n in 3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem cumque nulla. Molestiae, voluptate ipsum. Aliquid, culpa nisi earum illo tempora hic rem voluptatibus sequi totam ratione consectetur natus, consequuntur repudiandae sit magni velit libero ea repellendus doloribus molestias aliquam deleniti eligendi itaque ipsa. Repellendus natus et fuga illum culpa facilis similique quibusdam exercitationem non minima repellat doloremque, commodi impedit dolore cupiditate iusto nisi cum vitae, porro voluptatem? Provident suscipit sequi ex soluta voluptatem quis quod delectus tempora, labore facere. At soluta error velit aspernatur praesentium totam consequuntur dolor beatae, optio nobis sapiente! Voluptates veritatis obcaecati, nostrum tempore dolorum magni.</synapseColumn>
+        <synapseColumn v-for="n in 3" :key="n">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem cumque nulla. Molestiae, voluptate ipsum. Aliquid, culpa nisi earum illo tempora hic rem voluptatibus sequi totam ratione consectetur natus, consequuntur repudiandae sit magni velit libero ea repellendus doloribus molestias aliquam deleniti eligendi itaque ipsa. Repellendus natus et fuga illum culpa facilis similique quibusdam exercitationem non minima repellat doloremque, commodi impedit dolore cupiditate iusto nisi cum vitae, porro voluptatem? Provident suscipit sequi ex soluta voluptatem quis quod delectus tempora, labore facere. At soluta error velit aspernatur praesentium totam consequuntur dolor beatae, optio nobis sapiente! Voluptates veritatis obcaecati, nostrum tempore dolorum magni.</synapseColumn>
       </synapseRow>
       <synapseRow>
-        <synapseColumn v-for="n in 12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi pariatur eos maiores impedit ipsam voluptate rerum quae iure, voluptatem ea?</synapseColumn>
+        <synapseColumn v-for="n in 12" :key="n">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi pariatur eos maiores impedit ipsam voluptate rerum quae iure, voluptatem ea?</synapseColumn>
       </synapseRow>
       <synapseRow>
-        <synapseColumn v-for="n in 6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati molestias voluptates cum recusandae. Molestias sunt molestiae dicta obcaecati tempore! Beatae hic ut voluptatum suscipit perspiciatis eveniet facilis accusamus id, harum, reiciendis itaque, delectus enim quo reprehenderit libero excepturi et? Exercitationem.</synapseColumn>
+        <synapseColumn v-for="n in 6" :key="n">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati molestias voluptates cum recusandae. Molestias sunt molestiae dicta obcaecati tempore! Beatae hic ut voluptatum suscipit perspiciatis eveniet facilis accusamus id, harum, reiciendis itaque, delectus enim quo reprehenderit libero excepturi et? Exercitationem.</synapseColumn>
       </synapseRow>
       <synapseRow>
-        <synapseColumn v-for="n in 24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reprehenderit, a modi eos est maxime eaque ex dicta quisquam sunt totam molestiae. Quidem, iusto quas. Pariatur autem maiores excepturi incidunt.</synapseColumn>
+        <synapseColumn v-for="n in 24" :key="n">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus reprehenderit, a modi eos est maxime eaque ex dicta quisquam sunt totam molestiae. Quidem, iusto quas. Pariatur autem maiores excepturi incidunt.</synapseColumn>
       </synapseRow>
       <synapseRow>
-        <synapseColumn v-for="n in 3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, porro!</synapseColumn>
+        <synapseColumn v-for="n in 3" :key="n">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, porro!</synapseColumn>
       </synapseRow>
       <synapseRow>
-        <synapseColumn v-for="n in 102">Lorem, ipsum dolor.</synapseColumn>
+        <synapseColumn v-for="n in 102" :key="n">Lorem, ipsum dolor.</synapseColumn>
       </synapseRow>
       <synapseRow>
-        <synapseColumn v-for="n in 3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolorum soluta quibusdam, tempore natus ipsum quo exercitationem placeat molestiae quos, libero inventore laboriosam tempora repudiandae maiores amet ea odit sint veniam non a aliquid, quisquam animi! Iusto ullam est accusantium in quos rerum delectus libero ducimus impedit. Nulla maxime fuga quos modi repudiandae distinctio? Saepe officia ut nisi quibusdam pariatur fuga ipsa sint, vel ipsum eius voluptate quasi optio odio aliquam incidunt. Sint laborum quasi tenetur nam! Adipisci iste dignissimos eum debitis dolorum, placeat corporis, fugiat, quos nam ab maiores libero esse eligendi aliquid error impedit voluptates distinctio ratione aperiam quae sequi architecto officiis earum consectetur. Neque, cupiditate est unde placeat earum obcaecati facere, doloribus error asperiores voluptatum, at dolores quibusdam? Qui illo nostrum natus animi quia ea laborum ex maiores esse, non laboriosam nihil facilis aliquid est, fugit expedita! Voluptatibus mollitia sed quasi nostrum quia aspernatur consequatur voluptate, facere nihil officia provident ea vel, necessitatibus consectetur molestiae alias quos commodi nulla reiciendis delectus iure quo earum! Laborum dolores aperiam earum voluptatibus quo eos, error blanditiis ipsum perferendis, perspiciatis ut recusandae. Accusamus dolores id quas quia repudiandae illo, aut reiciendis suscipit quis quos. Magni temporibus debitis, similique neque officia maiores.</synapseColumn>
+        <synapseColumn v-for="n in 3" :key="n">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolorum soluta quibusdam, tempore natus ipsum quo exercitationem placeat molestiae quos, libero inventore laboriosam tempora repudiandae maiores amet ea odit sint veniam non a aliquid, quisquam animi! Iusto ullam est accusantium in quos rerum delectus libero ducimus impedit. Nulla maxime fuga quos modi repudiandae distinctio? Saepe officia ut nisi quibusdam pariatur fuga ipsa sint, vel ipsum eius voluptate quasi optio odio aliquam incidunt. Sint laborum quasi tenetur nam! Adipisci iste dignissimos eum debitis dolorum, placeat corporis, fugiat, quos nam ab maiores libero esse eligendi aliquid error impedit voluptates distinctio ratione aperiam quae sequi architecto officiis earum consectetur. Neque, cupiditate est unde placeat earum obcaecati facere, doloribus error asperiores voluptatum, at dolores quibusdam? Qui illo nostrum natus animi quia ea laborum ex maiores esse, non laboriosam nihil facilis aliquid est, fugit expedita! Voluptatibus mollitia sed quasi nostrum quia aspernatur consequatur voluptate, facere nihil officia provident ea vel, necessitatibus consectetur molestiae alias quos commodi nulla reiciendis delectus iure quo earum! Laborum dolores aperiam earum voluptatibus quo eos, error blanditiis ipsum perferendis, perspiciatis ut recusandae. Accusamus dolores id quas quia repudiandae illo, aut reiciendis suscipit quis quos. Magni temporibus debitis, similique neque officia maiores.</synapseColumn>
       </synapseRow>
     </synapseContent>
-    <synapseFooter/>
+    <synapseFooter>
+      <synapseMenu>
+        <synapseButton v-for="n in 4" :key="n">BUTTON{{n}}</synapseButton>
+      </synapseMenu>
+    </synapseFooter>
   </synapseApp>
   <!-- Next: add props to each component -->
 </template>
@@ -47,6 +63,10 @@ import synapseContent from './components/synapseContent'
 import synapseFooter from './components/synapseFooter'
 import synapseRow from './components/synapseRow'
 import synapseColumn from './components/synapseColumn'
+import synapseMenu from './components/synapseMenu'
+import synapseButton from './components/synapseButton'
+import synapseSearch from './components/synapseSearch'
+import synapseBrand from './components/synapseBrand'
 
 export default {
   name: 'App',
@@ -56,7 +76,11 @@ export default {
     synapseContent,
     synapseFooter,
     synapseRow,
-    synapseColumn
+    synapseColumn,
+    synapseMenu,
+    synapseButton,
+    synapseSearch,
+    synapseBrand
   }
 }
 </script>

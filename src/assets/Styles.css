@@ -3,11 +3,17 @@ body { margin: 0px; }
     background-color: #1F1F1F;
     height: 100vh;
     display: grid;
-    grid-template-rows: 50px auto 50px;
+    grid-template-rows: 70px auto 70px;
 }
 .synapse-header {
     background-color: #282828;
     border-bottom: #181818 solid 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
 }
 .synapse-content {
     background-color: #1F1F1F;
@@ -35,6 +41,12 @@ body { margin: 0px; }
 .synapse-footer {
     background-color: #282828;
     border-top: #181818 solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
 }
 .synapse-row {
   display: grid;
@@ -52,8 +64,52 @@ body { margin: 0px; }
   align-items: center;
   color: white;
   font-family: 'Roboto';
-  padding: 5px;
-  font-size: 12px;
+  padding: 10px;
+  font-size: 16px;
+}
+.synapse-menu {
+  height: 100%;
+  width: min-content;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.synapse-button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #282828;
+}
+
+.synapse-button:hover {
+  background-color: red;
+}
+.synapse-search {
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: text;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 20px;
+  height: 100%;
+  background-color: #282828;
+  border: none;
+  outline: none;
+}
+
+.synapse-brand {
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {

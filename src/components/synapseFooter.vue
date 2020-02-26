@@ -2,6 +2,7 @@
   <div
   class="synapse-footer"
   >
+  <slot/>
   </div>
 </template>
 

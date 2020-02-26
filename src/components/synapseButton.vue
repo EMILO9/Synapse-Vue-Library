@@ -1,6 +1,6 @@
 <template>
   <div
-  class="synapse-header"
+  class="synapse-button"
   >
   <slot/>
   </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'synapseHeader',
+  name: 'synapse-button',
   data () {
     return {}
   }
