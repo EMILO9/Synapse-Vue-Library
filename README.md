@@ -10,9 +10,9 @@ Vue.use(Synapse)
 ***
 > Application
 
-|Property       |Default        |
-| ------------- |:-------------:|
-| padding:      | right-aligned |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
+|Property       |Default            |
+| ----------------|:---------------:|
+| padding:        | 10px            |
+| border          | black solid 2px |
+| backgroundColor | are neat        |
 ***
