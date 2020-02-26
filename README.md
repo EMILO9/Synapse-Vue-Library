@@ -9,12 +9,9 @@ Vue.use(Synapse)
 ```
 ***
 > Application
-***
-> Application
-***
-> Application
-***
-> Application
-***
-> Application
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 ***
