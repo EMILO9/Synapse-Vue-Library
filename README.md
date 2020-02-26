@@ -13,3 +13,6 @@ import Synapse from 'synapse-vue-library'
 Vue.use(Synapse)
 ```
 ***
+> Usage
+
+***
