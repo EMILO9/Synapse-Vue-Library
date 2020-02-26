@@ -14,5 +14,5 @@ Vue.use(Synapse)
 | ----------------|:---------------:|
 | padding:        | 10px            |
 | border          | black solid 2px |
-| backgroundColor | are neat        |
+| backgroundColor | white           |
 ***
