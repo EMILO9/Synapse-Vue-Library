@@ -2,13 +2,11 @@
   <synapseApp>
     <synapseHeader>
       <synapseMenu>
-        <!-- <synapseBrand/>  -->
+        <synapseBrand>VUE</synapseBrand>
         <synapseButton v-for="n in 3" :key="n">BUTTON{{n}}</synapseButton>
+        <synapseSearch/>
       </synapseMenu>
       <synapseMenu>
-        <synapseButton><i class="fas fa-bell"></i></synapseButton>
-        <synapseButton><i class="fab fa-battle-net"></i></synapseButton>
-        <synapseButton><i class="fab fa-chrome"></i></synapseButton>
         <synapseButton v-for="n in 3" :key="n">BUTTON{{n}}</synapseButton>
         <synapseSearch/>
       </synapseMenu>
@@ -49,7 +47,9 @@
     </synapseContent>
     <synapseFooter>
       <synapseMenu>
-        <synapseButton v-for="n in 4" :key="n">BUTTON{{n}}</synapseButton>
+        <synapseButton><i class="fas fa-bell"></i></synapseButton>
+        <synapseButton><i class="fab fa-battle-net"></i></synapseButton>
+        <synapseButton><i class="fab fa-chrome"></i></synapseButton>
       </synapseMenu>
     </synapseFooter>
   </synapseApp>

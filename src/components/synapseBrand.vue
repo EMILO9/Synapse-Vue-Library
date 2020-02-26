@@ -1,5 +1,7 @@
 <template>
-<img class="synapse-brand" src="https://pngriver.com/wp-content/uploads/2018/04/Download-Paypal-Logo-PNG.png"/>
+<div class="synapse-brand">
+    <slot/>
+</div>
 </template>
 
 <script>
