@@ -1,6 +1,6 @@
 # synapse-vue-library
 
-> https://emilo9.github.io/Synapse-Vue-Library/
+> DEMO: https://emilo9.github.io/Synapse-Vue-Library/
 
 ## Build Setup
 
