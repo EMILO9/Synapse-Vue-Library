@@ -6,6 +6,7 @@
 
 ## How to use
 ```javascript
+main.js
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
