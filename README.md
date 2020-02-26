@@ -6,7 +6,6 @@
 
 ## How to use
 ```javascript
-main.js
-var s = "JavaScript syntax highlighting";
-alert(s);
+import Synapse from 'synapse-vue-library'
+Vue.use(Synapse)
 ```
