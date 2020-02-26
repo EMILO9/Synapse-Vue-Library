@@ -8,9 +8,6 @@ body { margin: 0px; }
 .synapse-header {
     background-color: #282828;
     border-bottom: #181818 solid 2px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr;
     color: white;
     font-family: 'Roboto';
     font-size: 20px;
@@ -39,14 +36,11 @@ body { margin: 0px; }
     background: #181818;
   }
 .synapse-footer {
-    background-color: #282828;
-    border-top: #181818 solid 2px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    color: white;
-    font-family: 'Roboto';
-    font-size: 20px;
+  background-color: #282828;
+  border-top: #181818 solid 2px;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 20px;
 }
 .synapse-row {
   display: grid;
@@ -66,25 +60,6 @@ body { margin: 0px; }
   font-family: 'Roboto';
   padding: 10px;
   font-size: 16px;
-}
-.synapse-menu {
-  height: 100%;
-  width: 100%; /*min-content*/
-  white-space: nowrap;
-  background-color: red;
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: end;
-  align-items: center;
-
-}
-.synapse-menu:nth-child(even) {
-  background-color: blue;
-}
-
-.test {
- height: 100%;
- padding: 5px;
 }
 @media only screen and (max-width: 600px) {
   .synapse-row {

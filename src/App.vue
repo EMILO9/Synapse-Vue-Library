@@ -1,12 +1,6 @@
 <template>
   <synapseApp>
-    <synapseHeader>
-      <synapseMenu>hhhhhh</synapseMenu>
-      <synapseMenu>
-        <button class="test" v-for="n in 5" :key="n">button{{n}}</button>
-        <input class="test" type="search" placeholder="SEARCH...">
-      </synapseMenu>
-    </synapseHeader>
+    <synapseHeader></synapseHeader>
     <synapseContent>
       <synapseRow>
         <synapseColumn v-for="n in 3" :key="n"></synapseColumn>
@@ -41,9 +35,7 @@
         <synapseColumn v-for="n in 3" :key="n">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolorum soluta quibusdam, tempore natus ipsum quo exercitationem placeat molestiae quos, libero inventore laboriosam tempora repudiandae maiores amet ea odit sint veniam non a aliquid, quisquam animi! Iusto ullam est accusantium in quos rerum delectus libero ducimus impedit. Nulla maxime fuga quos modi repudiandae distinctio? Saepe officia ut nisi quibusdam pariatur fuga ipsa sint, vel ipsum eius voluptate quasi optio odio aliquam incidunt. Sint laborum quasi tenetur nam! Adipisci iste dignissimos eum debitis dolorum, placeat corporis, fugiat, quos nam ab maiores libero esse eligendi aliquid error impedit voluptates distinctio ratione aperiam quae sequi architecto officiis earum consectetur. Neque, cupiditate est unde placeat earum obcaecati facere, doloribus error asperiores voluptatum, at dolores quibusdam? Qui illo nostrum natus animi quia ea laborum ex maiores esse, non laboriosam nihil facilis aliquid est, fugit expedita! Voluptatibus mollitia sed quasi nostrum quia aspernatur consequatur voluptate, facere nihil officia provident ea vel, necessitatibus consectetur molestiae alias quos commodi nulla reiciendis delectus iure quo earum! Laborum dolores aperiam earum voluptatibus quo eos, error blanditiis ipsum perferendis, perspiciatis ut recusandae. Accusamus dolores id quas quia repudiandae illo, aut reiciendis suscipit quis quos. Magni temporibus debitis, similique neque officia maiores.</synapseColumn>
       </synapseRow>
     </synapseContent>
-    <synapseFooter>
-      <synapseMenu>ggggg</synapseMenu>
-    </synapseFooter>
+    <synapseFooter></synapseFooter>
   </synapseApp>
   <!-- Next: add props to each component -->
 </template>
@@ -55,7 +47,6 @@ import synapseContent from './components/synapseContent'
 import synapseFooter from './components/synapseFooter'
 import synapseRow from './components/synapseRow'
 import synapseColumn from './components/synapseColumn'
-import synapseMenu from './components/synapseMenu'
 export default {
   name: 'App',
   components: {
@@ -64,8 +55,7 @@ export default {
     synapseContent,
     synapseFooter,
     synapseRow,
-    synapseColumn,
-    synapseMenu
+    synapseColumn
   }
 }
 </script>
