@@ -1,14 +1,10 @@
 <template>
   <synapseApp>
     <synapseHeader>
+      <synapseMenu>hhhhhh</synapseMenu>
       <synapseMenu>
-        <synapseBrand>VUE</synapseBrand>
-        <synapseButton v-for="n in 3" :key="n">BUTTON{{n}}</synapseButton>
-        <synapseSearch/>
-      </synapseMenu>
-      <synapseMenu>
-        <synapseButton v-for="n in 3" :key="n">BUTTON{{n}}</synapseButton>
-        <synapseSearch/>
+        <button class="test" v-for="n in 5" :key="n">button{{n}}</button>
+        <input class="test" type="search" placeholder="SEARCH...">
       </synapseMenu>
     </synapseHeader>
     <synapseContent>
@@ -46,11 +42,7 @@
       </synapseRow>
     </synapseContent>
     <synapseFooter>
-      <synapseMenu>
-        <synapseButton><i class="fas fa-bell"></i></synapseButton>
-        <synapseButton><i class="fab fa-battle-net"></i></synapseButton>
-        <synapseButton><i class="fab fa-chrome"></i></synapseButton>
-      </synapseMenu>
+      <synapseMenu>ggggg</synapseMenu>
     </synapseFooter>
   </synapseApp>
   <!-- Next: add props to each component -->
@@ -64,10 +56,6 @@ import synapseFooter from './components/synapseFooter'
 import synapseRow from './components/synapseRow'
 import synapseColumn from './components/synapseColumn'
 import synapseMenu from './components/synapseMenu'
-import synapseButton from './components/synapseButton'
-import synapseSearch from './components/synapseSearch'
-import synapseBrand from './components/synapseBrand'
-
 export default {
   name: 'App',
   components: {
@@ -77,10 +65,7 @@ export default {
     synapseFooter,
     synapseRow,
     synapseColumn,
-    synapseMenu,
-    synapseButton,
-    synapseSearch,
-    synapseBrand
+    synapseMenu
   }
 }
 </script>
