@@ -14,25 +14,25 @@ body { margin: 0px; }
 }
 .synapse-content {
     background-color: #1F1F1F;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 /* width */
-.synapse-content::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 10px;
   }
   
   /* Track */
-  .synapse-content::-webkit-scrollbar-track {
+  ::-webkit-scrollbar-track {
     background: #444444;
   }
   
   /* Handle */
-  .synapse-content::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     background: #1b1b1b;
   }
   
   /* Handle on hover */
-  .synapse-content::-webkit-scrollbar-thumb:hover {
+  ::-webkit-scrollbar-thumb:hover {
     background: #181818;
   }
 .synapse-footer {
