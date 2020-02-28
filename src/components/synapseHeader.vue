@@ -2,15 +2,32 @@
   <div
   class="synapse-header"
   >
-  <slot/>
+    <slot name="logo"/>
+    <slot name="menu" v-if="width > 1336"/>
+      <synapseMenu v-else>
+        <button class="synapse-button"><i class="fas fa-bars"></i></button>
+      </synapseMenu>
   </div>
 </template>
 
 <script>
+import synapseMenu from './synapseMenu'
 export default {
   name: 'synapseHeader',
+  components: {
+    synapseMenu
+  },
   data () {
-    return {}
+    return {
+      width: 0
+    }
+  },
+  created () {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+  methods: {
+    handleResize () { this.width = window.innerWidth }
   }
 }
 </script>
