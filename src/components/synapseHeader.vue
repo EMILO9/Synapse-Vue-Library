@@ -3,7 +3,7 @@
   class="synapse-header"
   >
     <slot name="logo"/>
-    <slot name="menu" v-if="width > 1336"/>
+    <slot name="menu" v-if="width > 1200"/>
       <synapseMenu v-else>
         <button class="synapse-button" style="font-size: 40px;"><i class="fas fa-bars"></i></button>
       </synapseMenu>
@@ -27,7 +27,7 @@ export default {
     this.handleResize()
   },
   methods: {
-    handleResize () { this.width = window.innerWidth }
+    handleResize () { this.width = window.innerWidth; console.log(this.width) }
   }
 }
 </script>
