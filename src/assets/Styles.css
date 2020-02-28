@@ -25,12 +25,16 @@ body { margin: 0px; }
   text-transform: uppercase;
   border: none;
   outline: none;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Roboto';
+  cursor: pointer;
 }
 .synapse-button:hover {
-  color: red;
-  cursor: pointer;
+  /* color: red; */
+  background-color: red;
+}
+.synapse-button-active {
+  background-color: red;
 }
 .synapse-menu {
   width: 100%; /* min-content */
@@ -93,7 +97,12 @@ body { margin: 0px; }
   padding: 10px;
   font-size: 16px;
 }
-@media only screen and (max-width: 1200px) {
+.synapse-logo {
+  font-size: 30px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 800px) {
   .synapse-row {
     grid-template-columns: 1fr;
   }
