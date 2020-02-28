@@ -5,7 +5,7 @@
     <slot name="logo"/>
     <slot name="menu" v-if="width > 1336"/>
       <synapseMenu v-else>
-        <button class="synapse-button"><i class="fas fa-bars"></i></button>
+        <button class="synapse-button" style="font-size: 40px;"><i class="fas fa-bars"></i></button>
       </synapseMenu>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <synapseApp>
     <synapseHeader>
-      <template v-slot:logo><synapseMenu><span style="margin-left:10px">LOGO</span></synapseMenu></template>
+      <template v-slot:logo><synapseMenu><span style="margin-left:10px; font-size: 40px;">LOGO</span></synapseMenu></template>
       <template v-slot:menu><synapseMenu>
         <button class="synapse-button" v-for="item in 5" :key="item">Button{{item}}</button>
         </synapseMenu></template>
@@ -12,6 +12,9 @@
       </synapseRow>
       <synapseRow>
         <synapseColumn v-for="n in 20" :key="n">Lorem ipsum dolor sit amet.</synapseColumn>
+      </synapseRow>
+      <synapseRow>
+        <synapseColumn v-for="n in 300" :key="n">Lorem ipsum dolor sit amet.</synapseColumn>
       </synapseRow>
     </synapseContent>
     <synapseFooter></synapseFooter>
