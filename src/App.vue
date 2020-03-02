@@ -13,13 +13,7 @@
     </synapseHeader>
     <synapseContent>
       <synapseRow>
-        <synapseColumn v-for="n in 3" :key="n">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus ratione aliquid iste eos corporis, odit repellat sequi non, dicta minima atque est earum. Cupiditate maiores sunt a magni numquam!</synapseColumn>
-      </synapseRow>
-      <synapseRow>
-        <synapseColumn v-for="n in 30" :key="n">Lorem ipsum dolor sit amet.</synapseColumn>
-      </synapseRow>
-      <synapseRow>
-        <synapseColumn v-for="n in 300" :key="n">Lorem ipsum dolor sit amet.</synapseColumn>
+        <synapseColumn v-for="n in 10000" :key="n">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, natus ratione aliquid iste eos corporis, odit repellat sequi non, dicta minima atque est earum. Cupiditate maiores sunt a magni numquam!</synapseColumn>
       </synapseRow>
     </synapseContent>
     <synapseFooter>Copyright</synapseFooter>
