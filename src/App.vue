@@ -3,8 +3,13 @@
     <synapseHeader :mobileMenuOpen="mobileMenuOpen">
       <template v-slot:logo><synapseMenu><synapseLogo>YOUR LOGO</synapseLogo></synapseMenu></template>
       <template v-slot:menu><synapseMenu>
-        <synapseButton @click.native="setActive(n)" v-for="(n, index) in buttons" :key="n+index" :button="n"/>
-        </synapseMenu></template>
+        <synapseButton
+        @click.native="setActive(n)"
+        v-for="(n, index) in buttons"
+        :key="n+index"
+        :button="n"/>
+        </synapseMenu>
+      </template>
     </synapseHeader>
     <synapseContent>
       <synapseRow>
@@ -52,11 +57,11 @@ export default {
   data () {
     return {
       buttons: [
-        {Name: 'Button1', isActive: true},
-        {Name: 'Button2', isActive: false},
-        {Name: 'Button3', isActive: false},
-        {Name: 'Button4', isActive: false},
-        {Name: 'Button5', isActive: false}
+        {Name: 'Page1', isActive: true},
+        {Name: 'Page2', isActive: false},
+        {Name: 'Page3', isActive: false},
+        {Name: 'Page4', isActive: false},
+        {Name: 'Page5', isActive: false}
       ],
       mobileMenuOpen: false
     }

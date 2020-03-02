@@ -82,6 +82,7 @@ body { margin: 0px; }
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  user-select: none;
 }
 .synapse-row {
   display: grid;
@@ -107,6 +108,7 @@ body { margin: 0px; }
   font-size: 30px;
   margin-left: 10px;
   white-space: nowrap;
+  cursor: pointer;
 }
 .synapse-mobile-menu {
   background-color: black;
