@@ -118,18 +118,21 @@ body { margin: 0px; }
   font-size: 16px;
 }
 .synapse-close-button {
-  background-color: red;
-  border-bottom: #181818 solid 2px;
   justify-content: flex-end;
   font-size: 30px;
   align-items: center;
   display: flex;
   padding: 10px;
   cursor: pointer;
+  background-color: #282828;
+  border-bottom: #181818 solid 2px;
 }
 .synapse-all-menu-options {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
+}
+.fa-times:hover {
+  color: red;
 }
 .synapse-mobile-menu-item {
   border: #181818 solid 2px;
