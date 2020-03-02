@@ -33,6 +33,9 @@ export default {
     openMobileMenu () {
       eventBus.$emit('setMenu')
     }
+  },
+  watch: {
+    width: function () { if (this.width > 800) eventBus.$emit('closeMenu') }
   }
 }
 </script>
