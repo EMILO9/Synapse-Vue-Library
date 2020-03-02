@@ -19,16 +19,22 @@ body { margin: 0px; }
     text-transform: uppercase;
 }
 .synapse-button {
-  height: 100%;
-  padding: 10px;
-  background-color: #282828;
+  height: 50px;
+  background-color: #1F1F1F;
   color: white;
   text-transform: uppercase;
-  border: none;
   outline: none;
   font-size: 15px;
   font-family: 'Roboto';
   cursor: pointer;
+  border: #181818 solid 2px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 0px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .synapse-button:hover {
   /* color: red; */
@@ -36,6 +42,9 @@ body { margin: 0px; }
 }
 .synapse-button-active {
   background-color: red;
+}
+.icon {
+  margin: 5px;
 }
 .synapse-menu {
   width: 100%; /* min-content */
@@ -52,24 +61,43 @@ body { margin: 0px; }
 .synapse-content {
     background-color: #1F1F1F;
     overflow-y: scroll;
+    -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* width */
-::-webkit-scrollbar {
+.synapse-content::-webkit-scrollbar {
     width: 10px;
   }
   
   /* Track */
-  ::-webkit-scrollbar-track {
+  .synapse-content::-webkit-scrollbar-track {
     background: #444444;
   }
   
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+  .synapse-content::-webkit-scrollbar-thumb {
     background: #1b1b1b;
   }
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+  .synapse-content::-webkit-scrollbar-thumb:hover {
     background: #181818;
   }
 .synapse-footer {
@@ -144,11 +172,13 @@ body { margin: 0px; }
 }
 .synapse-mobile-menu-item {
   border: #181818 solid 2px;
+  background-color: #1d1d1d;
   color: white;
   font-family: 'Roboto';
-  font-size: 25px;
+  font-size: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 10px;
   align-items: center;
   text-transform: uppercase;
 }
@@ -160,7 +190,21 @@ body { margin: 0px; }
   background-color: red;
   cursor: pointer;
 }
-@media only screen and (max-width: 800px) {
+.synapse-search {
+  height: 50px;
+  background-color: #1F1F1F;
+  color: white;
+  text-transform: uppercase;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Roboto';
+  cursor: text;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: #181818 solid 2px;
+  padding: 10px;
+}
+@media only screen and (max-width: 1200px) {
   .synapse-row {
     grid-template-columns: 1fr;
   }

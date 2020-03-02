@@ -3,7 +3,7 @@
   class="synapse-header"
   >
     <slot name="logo"/>
-    <slot name="menu" v-if="width > 800"/>
+    <slot name="menu" v-if="width >= 1200"/>
       <synapseMenu v-else>
         <button @click="openMobileMenu" class="synapse-button" style="font-size: 30px;"><i class="fas fa-bars"></i></button>
       </synapseMenu>
@@ -35,7 +35,7 @@ export default {
     }
   },
   watch: {
-    width: function () { if (this.width > 800) eventBus.$emit('closeMenu') }
+    width: function () { if (this.width > 1200) eventBus.$emit('closeMenu') }
   }
 }
 </script>

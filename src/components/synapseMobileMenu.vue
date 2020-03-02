@@ -6,7 +6,7 @@
         @click="run(b)"
         :class="{'synapse-mobile-menu-item-active': b.isActive}"
          class="synapse-mobile-menu-item"
-         v-for="(b, index) in buttons" :key="b+index">{{b.Name}}</div>
+         v-for="(b, index) in buttons" :key="b+index"><i class="icon" :class="b.fontClass"></i> {{b.Name}}</div>
     </div>
 </div>
 </template>
