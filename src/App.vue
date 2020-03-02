@@ -1,9 +1,9 @@
 <template>
   <synapseApp>
-    <synapseHeader>
+    <synapseHeader :mobileMenuOpen="mobileMenuOpen">
       <template v-slot:logo><synapseMenu><synapseLogo>YOUR LOGO</synapseLogo></synapseMenu></template>
       <template v-slot:menu><synapseMenu>
-        <synapseButton @click.native="setActive(n)" v-for="n in buttons" :key="n" :button="n"/>
+        <synapseButton @click.native="setActive(n)" v-for="(n, index) in buttons" :key="n+index" :button="n"/>
         </synapseMenu></template>
     </synapseHeader>
     <synapseContent>
@@ -18,6 +18,7 @@
       </synapseRow>
     </synapseContent>
     <synapseFooter></synapseFooter>
+    <synapseMobileMenu :mobileMenuOpen="mobileMenuOpen" :buttons="buttons"/>
   </synapseApp>
   <!-- Next: add props to each component -->
 </template>
@@ -32,6 +33,8 @@ import synapseColumn from './components/synapseColumn'
 import synapseMenu from './components/synapseMenu'
 import synapseButton from './components/synapseButton'
 import synapseLogo from './components/synapseLogo'
+import synapseMobileMenu from './components/synapseMobileMenu'
+import { eventBus } from './main'
 export default {
   name: 'App',
   components: {
@@ -43,7 +46,8 @@ export default {
     synapseColumn,
     synapseMenu,
     synapseButton,
-    synapseLogo
+    synapseLogo,
+    synapseMobileMenu
   },
   data () {
     return {
@@ -53,14 +57,21 @@ export default {
         {Name: 'Button3', isActive: false},
         {Name: 'Button4', isActive: false},
         {Name: 'Button5', isActive: false}
-      ]
+      ],
+      mobileMenuOpen: false
     }
   },
   methods: {
     setActive (n) {
       for (let button of this.buttons) { button.isActive = false }
       n.isActive = true
+      this.mobileMenuOpen = false
     }
+  },
+  created () {
+    eventBus.$on('setMenu', () => { this.mobileMenuOpen = true })
+    eventBus.$on('selectMenu', (data) => { this.setActive(data) })
+    eventBus.$on('closeMenu', data => { this.mobileMenuOpen = data })
   }
 }
 </script>

@@ -5,15 +5,17 @@
     <slot name="logo"/>
     <slot name="menu" v-if="width > 800"/>
       <synapseMenu v-else>
-        <button class="synapse-button" style="font-size: 30px;"><i class="fas fa-bars"></i></button>
+        <button @click="openMobileMenu" class="synapse-button" style="font-size: 30px;"><i class="fas fa-bars"></i></button>
       </synapseMenu>
   </div>
 </template>
 
 <script>
 import synapseMenu from './synapseMenu'
+import { eventBus } from '../main'
 export default {
   name: 'synapseHeader',
+  props: ['mobileMenuOpen'],
   components: {
     synapseMenu
   },
@@ -27,7 +29,10 @@ export default {
     this.handleResize()
   },
   methods: {
-    handleResize () { this.width = window.innerWidth; console.log(this.width) }
+    handleResize () { this.width = window.innerWidth },
+    openMobileMenu () {
+      eventBus.$emit('setMenu')
+    }
   }
 }
 </script>

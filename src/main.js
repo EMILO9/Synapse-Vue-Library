@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import './assets/Styles.css'
+export const eventBus = new Vue()
 
 Vue.config.productionTip = false
 
