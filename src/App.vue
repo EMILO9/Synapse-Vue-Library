@@ -17,7 +17,7 @@
         <synapseColumn v-for="n in 300" :key="n">Lorem ipsum dolor sit amet.</synapseColumn>
       </synapseRow>
     </synapseContent>
-    <synapseFooter></synapseFooter>
+    <synapseFooter>Copyright</synapseFooter>
     <synapseMobileMenu :mobileMenuOpen="mobileMenuOpen" :buttons="buttons"/>
   </synapseApp>
   <!-- Next: add props to each component -->

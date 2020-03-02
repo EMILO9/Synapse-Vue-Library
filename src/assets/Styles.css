@@ -16,6 +16,7 @@ body { margin: 0px; }
     align-items: center;
     grid-template-columns: 1fr 3fr;
     column-gap: 10px;
+    text-transform: uppercase;
 }
 .synapse-button {
   height: 100%;
@@ -77,6 +78,10 @@ body { margin: 0px; }
   color: white;
   font-family: 'Roboto';
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
 }
 .synapse-row {
   display: grid;
@@ -96,6 +101,7 @@ body { margin: 0px; }
   font-family: 'Roboto';
   padding: 10px;
   font-size: 16px;
+  text-transform: uppercase;
 }
 .synapse-logo {
   font-size: 30px;
@@ -142,6 +148,7 @@ body { margin: 0px; }
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 .synapse-mobile-menu-item:hover {
   background-color: red;
